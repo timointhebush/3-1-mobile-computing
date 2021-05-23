@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_prev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="PREVIOUS" />
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="NEXT" />
+    </LinearLayout>
+
+    <ViewFlipper
+        android:id="@+id/viewFlipper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFAA"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imageView_bird"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/bird"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#CCFFCC">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView_nougat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="50dp"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:padding="20dp"
+                        android:text="Nougat"
+                        android:textSize="40sp" />
+
+                    <TextView
+                        android:id="@+id/textView_oreo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="50dp"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:padding="20dp"
+                        android:text="Oreo"
+                        android:textSize="40sp" />
+
+                    <TextView
+                        android:id="@+id/textView_pie"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="50dp"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:padding="20dp"
+                        android:text="Pie"
+                        android:textSize="40sp" />
+
+                    <TextView
+                        android:id="@+id/textView_androidQ"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="50dp"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:padding="20dp"
+                        android:text="Android Q"
+                        android:textSize="40sp" />
+
+                    <TextView
+                        android:id="@+id/textView_androidR"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="50dp"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:padding="20dp"
+                        android:text="Android R"
+                        android:textSize="40sp" />
+
+
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+
+
+
+    </ViewFlipper>
+
+</LinearLayout>
