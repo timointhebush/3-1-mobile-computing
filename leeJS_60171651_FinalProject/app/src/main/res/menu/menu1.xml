@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/itemAlone"
+        android:title="혼자" />
+    <item
+        android:id="@+id/itemFriend"
+        android:title="친구" />
+    <item
+        android:id="@+id/itemLover"
+        android:title="연인" />
+    <item
+        android:id="@+id/itemParents"
+        android:title="부모님" />
+</menu>
